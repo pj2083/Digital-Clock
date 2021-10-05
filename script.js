@@ -4,7 +4,6 @@ let date=new Date();
 let hours=date.getHours();
 let minutes=date.getMinutes();
 let seconds=date.getSeconds();
-let date=date.getDate();
 am_pm = "AM";
 if (hours > 12) {
     hours -= 12;
@@ -22,5 +21,4 @@ seconds = seconds < 10 ? "0" + seconds : seconds;
 document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds+"  "+am_pm; 
 
 }
-console.log(date);
 setInterval(showTime, 1000);
